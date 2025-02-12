@@ -23,17 +23,24 @@ class Nodo:
         if self.der:
             self.der.inorden()
 
-    def crear_arbol():
-        top = int(input("Escriba la raiz: ")) 
-        raiz = Nodo(top)
-        cant_nodos = int(input("Cuantos nodos quieres? ")) 
+    @classmethod
+    def crear_arbol(cls):
+        top = int(input("Escriba la raiz: "))
+        raiz = cls(top)
+        cant_nodos = int(input("Cuantos nodos quieres? "))
 
         for i in range(cant_nodos):
-            nodonue = int(input(f"Ingrese el nodo {i + 1}: "))  
+            nodonue = int(input(f"Ingrese el nodo {i + 1}: "))
             raiz.insertar(nodonue)
 
         return raiz
 
-raiz = Nodo.crear_arbol()
-print("ARBOL: ")
-raiz.inorden()
+
+def main():
+    raiz = Nodo.crear_arbol()
+    print("ARBOL: ")
+    raiz.inorden()
+
+
+if __name__ == "__main__":
+    main()

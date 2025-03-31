@@ -47,7 +47,7 @@ def main():
     from_field = st.text_input("From", "example@example.com")
     to_field = st.text_input("To", "recipient@example.com")
     subject = st.text_input("Subject", "Subject of the email")
-    body = st.text_area("Body", "This is where the body of the email goes.")
+    body = st.text_area("Body", "Body of the email.")
 
     if st.button("Clasificar"):
         if from_field and to_field and subject and body:

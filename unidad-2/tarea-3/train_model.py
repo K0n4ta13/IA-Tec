@@ -8,12 +8,12 @@ from sklearn.model_selection import GridSearchCV
 
 def train_and_save_model():
     dataset = pd.read_csv("./spam_assassin.csv")
+    dataset = dataset.drop_duplicates()
+    dataset["text"] = dataset["text"].str.lower()
     data, target = dataset.text, dataset.target
 
     stop_words = stopwords.words("english")
-    tfidf = TfidfVectorizer(
-        stop_words=stop_words, token_pattern=r"(?u)\b([a-zA-Z]{4,12})\b"
-    )
+    tfidf = TfidfVectorizer(stop_words=stop_words, token_pattern=r"(?u)\b\w+\b")
     train_X = tfidf.fit_transform(data)
 
     rf_clf = RandomForestClassifier(random_state=0)

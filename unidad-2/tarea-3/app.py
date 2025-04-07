@@ -14,12 +14,12 @@ def load_model():
 
 
 def preprocess_email(from_field, to_field, subject, body):
-    email_text = f"From: {from_field} To: {to_field} Subject: {subject} Body: {body}"
+    email_text = (
+        f"From: {from_field} To: {to_field} Subject: {subject} Body: {body}".lower()
+    )
 
     stop_words = stopwords.words("english")
-    tfidf = TfidfVectorizer(
-        stop_words=stop_words, token_pattern=r"(?u)\b([a-zA-Z]{4,12})\b"
-    )
+    tfidf = TfidfVectorizer(stop_words=stop_words, token_pattern=r"(?u)\b\w+\b")
 
     model, tfidf = load_model()
     if model is not None:

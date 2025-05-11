@@ -1,0 +1,12 @@
+[
+    {"requisitos": ["A", "B", "C", "D", "E", "F"], "conclusion": "Planta es saludable"},
+    {"requisitos": ["G", "H"], "conclusion": "Posible deficiencia de nitrógeno"},
+    {"requisitos": ["I", "J"], "conclusion": "Posible infestación de plagas"},
+    {"requisitos": ["K", "L"], "conclusion": "Posible infección por hongos"},
+    {"requisitos": ["M", "N"], "conclusion": "Posible deficiencia de fósforo"},
+    {"requisitos": ["O", "P"], "conclusion": "Posible falta de agua"},
+    {"requisitos": ["Q", "R"], "conclusion": "Posible exceso de agua"},
+    {"requisitos": ["S", "T"], "conclusion": "Posible deficiencia de potasio"},
+    {"requisitos": ["U", "V"], "conclusion": "Posible daño por quemadura solar"}
+]
+

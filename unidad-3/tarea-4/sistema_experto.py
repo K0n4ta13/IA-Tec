@@ -2,7 +2,6 @@ import json
 import os
 import sys
 
-# Rutas a los archivos JSON
 PROP_FILE_PATH = "proposiciones.json"
 RULES_FILE_PATH = "reglas.json"
 

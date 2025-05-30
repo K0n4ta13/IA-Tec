@@ -34,3 +34,9 @@ python train_model.py
 ```bash
 python predict_emotion.py /ruta/a/tu/imagen
 ```
+
+## Evaluar modelo
+
+El archivo `reporte_clasificacion.txt` incluye información sobre la precisión del modelo al momento de evaluar las emociones. La imagen `matriz_emociones.png` muestra un gráfico en el que se pueden ver la emoción real y las emociones predichas.
+
+Para generar estos archivos, debes ejecutar el script `evaluate_model.py`, asegurándote de que el modelo ya se encuentre entrenado.

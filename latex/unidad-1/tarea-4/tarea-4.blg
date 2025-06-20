@@ -1,0 +1,17 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'tarea-4.blg'
+[44] biber:340> INFO - === vie feb 21, 2025, 00:06:25
+[53] Biber.pm:420> INFO - Reading 'tarea-4.bcf'
+[92] Biber.pm:991> INFO - Using all citekeys in bib section 0
+[100] Biber.pm:4463> INFO - Processing section 0
+[106] Biber.pm:4654> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[107] bibtex.pm:1713> INFO - LaTeX decoding ...
+[110] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[134] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[135] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[135] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'es-ES'
+[136] bbl.pm:676> INFO - Writing 'tarea-4.bbl' with encoding 'UTF-8'
+[137] bbl.pm:779> INFO - Output to tarea-4.bbl
+[137] Biber.pm:131> WARN - legacy month field 'julio' in entry 'chudleigh2024agentes' is not an integer - this will probably not sort properly.
+[137] Biber.pm:131> WARN - legacy month field 'October 3' in entry 'botia2007agentes' is not an integer - this will probably not sort properly.
+[137] Biber.pm:133> INFO - WARNINGS: 2

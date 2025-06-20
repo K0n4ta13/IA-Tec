@@ -1,0 +1,446 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{csquotes}
+\DeclareQuoteStyle{spanish}{\textquotedblleft}{\textquotedblright}{\textquoteleft}{\textquoteright}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+  
+  \thispagestyle{empty}
+
+  \includegraphics[width=\textwidth]{/usr/share/templates/latex/tec.jpeg}
+
+  \begin{center}
+    {\LARGE \textbf{Instituto Tecnológico de Culiacán}}
+
+    \vspace{1cm}
+    {\Large Inteligencia Artificial}
+
+    \vspace{4cm}
+    {\large \textbf{Equipo:}}
+
+    \vspace{0.3cm}
+    {\large
+      Uriarte Lopez Brandon Gael\\\vspace{0.3cm}
+      Ramos Matunaga Raúl Alejandro
+    }
+
+    \vspace{2cm}
+    {\large \textbf{Carrera:}}
+
+    \vspace{0.3cm}
+    {\large Ingeniería en Sistemas Computacionales}
+
+    \vspace{2cm}
+    {\large \textbf{Docente:}}
+
+    \vspace{0.3cm}
+    {\large Mora Felix Zuriel Dathan}
+  \end{center}
+
+  \newpage
+
+  \section*{Paradigma Simbólico}
+
+  El enfoque simbólico, también conocido como \textbf{IA clásica}, se basa en la representación explícita del conocimiento mediante símbolos y reglas lógicas. Este paradigma asume que la inteligencia puede replicarse mediante la manipulación estructurada de símbolos abstractos.
+
+  \subsection*{Características Principales}
+  \begin{itemize}
+      \item Representación del conocimiento mediante \textbf{reglas lógicas}
+      \item Uso de \textbf{estructuras formales} como árboles de decisión y grafos conceptuales
+      \item Énfasis en el \textbf{razonamiento deductivo} y la planificación
+      \item Requiere \textbf{knowledge engineering} para codificar conocimiento experto
+  \end{itemize}
+
+  \subsection*{Ejemplos Prácticos}
+  \begin{enumerate}
+    \item \textbf{Sistemas Expertos Médicos}
+    
+      \textit{MYCIN (1976)}
+    
+      Sistema diagnóstico para enfermedades infecciosas que utilizaba 600 reglas clínicas. Analizaba síntomas mediante inferencia lógica para sugerir tratamientos con antibióticos.
+
+    \item \textbf{Motores de Reglas Comerciales}
+    
+      \textit{IBM Operational Decision Manager}
+      
+      Plataforma empresarial que automatiza decisiones complejas usando reglas de negocio estructuradas (ej. aprobación de créditos basada en políticas financieras).
+
+    \item \textbf{Procesamiento de Lenguaje Natural Simbólico}
+    
+      \textit{Gramáticas Formales en Traducción Automática}
+      
+      Sistemas como SYSTRAN (usado inicialmente por Google Translate) que aplicaban reglas gramaticales y diccionarios estructurados para traducción entre idiomas.
+
+    \item \textbf{Planeamiento Automático}
+    
+      \textit{STRIPS (Stanford Research Institute Problem Solver)}
+
+      Sistema pionero para control de robots que utilizaba lógica de primer orden para generar secuencias de acciones alcanzando objetivos específicos.
+
+    \item \textbf{Grafos de Conocimiento}
+    
+      \textit{Knowledge Graph de Google}
+
+      Base de conocimiento estructurado que relaciona entidades (personas, lugares, conceptos) mediante propiedades y relaciones semánticas formalizadas.
+  \end{enumerate}
+
+  \subsection*{Ventajas y Limitaciones}
+
+  \textbf{Ventajas:}
+  \begin{itemize}
+    \item Transparencia en la toma de decisiones
+    \item Facilidad para verificar el comportamiento
+    \item Eficaz en dominios bien definidos
+\end{itemize}
+
+  \textbf{Limitaciones:}
+  \begin{itemize}
+    \item Requiere conocimiento experto previo
+    \item Escalabilidad limitada
+    \item Dificultad con datos ambiguos
+  \end{itemize}
+
+  \section*{Paradigma Conexionista}
+
+  El enfoque conexionista, también llamado \textbf{aprendizaje profundo} o \textbf{basado en redes neuronales}, se centra en el aprendizaje automático mediante modelos inspirados en el cerebro biológico. Utiliza redes de nodos interconectados que ajustan sus pesos para detectar patrones en datos.
+
+  \subsection*{Características Principales}
+  \begin{itemize}
+    \item Aprendizaje basado en \textbf{datos} en lugar de reglas explícitas
+    \item Representación distribuida del conocimiento en pesos sinápticos
+    \item Procesamiento \textbf{no lineal} y paralelo
+    \item Capacidad de \textbf{generalización} a partir de ejemplos
+    \item Arquitecturas jerárquicas con múltiples capas ocultas
+  \end{itemize}
+
+  \subsection*{Ejemplos Prácticos}
+  \begin{enumerate}
+    \item \textbf{Reconocimiento de Imágenes}
+    
+      \textit{ResNet (Microsoft, 2015)}
+      
+      Red neuronal convolucional (CNN) que superó a humanos en clasificación de ImageNet. Usada en diagnósticos médicos por imágenes y sistemas de seguridad facial.
+
+    \item \textbf{Procesamiento de Lenguaje Natural (PLN)}
+    
+      \textit{BERT (Google, 2018)}
+
+      Modelo de transformadores que entiende contexto bidireccional. Base de ChatGPT y sistemas de búsqueda semántica.
+
+    \item \textbf{Reinforcement Learning}
+    
+      \textit{AlphaGo (DeepMind, 2016)}
+    
+      Red neuronal que derrotó al campeón mundial de Go mediante aprendizaje por refuerzo profundo (DQN).
+
+    \item \textbf{Vehículos Autónomos}
+    
+      \textit{Tesla Autopilot}
+    
+      Sistema de percepción basado en redes neuronales para detección de peatones, señales de tráfico y toma de decisiones en tiempo real.
+
+    \item \textbf{Recomendadores Inteligentes}
+    
+      \textit{Sistema de recomendación de Netflix}
+      
+      Modelos híbridos (redes neuronales + filtrado colaborativo) que predicen preferencias de usuarios con >75\% de precisión.
+  \end{enumerate}
+
+  \subsection*{Ventajas y Limitaciones}
+
+  \textbf{Ventajas:}
+  \begin{itemize}
+    \item Manejo eficiente de datos no estructurados (imágenes, texto)
+    \item Escalabilidad en problemas de alta dimensionalidad
+    \item Adaptabilidad a nuevos patrones mediante entrenamiento
+    \item Extracción automática de características relevantes
+  \end{itemize}
+
+  \textbf{Limitaciones:}
+  \begin{itemize}
+    \item Comportamiento de "caja negra"
+    \item Requiere grandes volúmenes de datos etiquetados
+    \item Coste computacional elevado para entrenamiento
+    \item Riesgo de sobreajuste en datos sesgados
+  \end{itemize}
+
+  \textbf{Aplicación Actual}: Dominio en visión por computadora, traducción automática, generación de contenido y sistemas de predicción complejos.
+
+  \section*{Paradigma Bioinspirado}
+
+  Los sistemas bioinspirados imitan mecanismos de la naturaleza (evolución biológica, comportamientos colectivos o procesos fisiológicos) para resolver problemas complejos. Combina principios de biología, física y computación.
+
+  \subsection*{Características Principales}
+  \begin{itemize}
+    \item Modelado de \textbf{procesos naturales}: evolución, enjambres, sistemas inmunológicos
+    \item \textbf{Auto-organización} y emergencia de patrones globales desde reglas locales simples
+    \item Adaptación dinámica mediante \textbf{retroalimentación} continua
+    \item Tolerancia a fallos y \textbf{robustez} en entornos cambiantes
+    \item Optimización colectiva sin control centralizado
+  \end{itemize}
+
+  \subsection*{Ejemplos Prácticos}
+  \begin{enumerate}
+    \item \textbf{Algoritmos Genéticos}
+    
+      \textit{Diseño de antenas para NASA}
+    
+      Evolución de estructuras mediante selección artificial (ST5-3-10: antena satelital con 70\% más eficiencia que diseños humanos).
+
+    \item \textbf{Optimización por Colonias de Hormigas}
+    
+      \textit{Enrutamiento en redes de telecomunicaciones}
+    
+      Sistemas como AntNet ajustan rutas basándose en feromonas virtuales, reduciendo congestión en tiempo real.
+
+    \item \textbf{Enjambres de Robots}
+    
+      \textit{Kilobots (Harvard)}
+    
+      1,024 robots simples que coordinan movimientos imitando cardúmenes, usados en agricultura de precisión.
+
+    \item \textbf{Sistemas Inmunológicos Artificiales}
+    
+      \textit{Detección de intrusiones en ciberseguridad}
+    
+      AISEC emplea linfocitos virtuales para identificar patrones anómalos en redes corporativas.
+
+    \item \textbf{Redes Neuronales Evolutivas}
+    
+      \textit{NEAT (NeuroEvolution of Augmenting Topologies)}
+    
+      Algoritmo que evoluciona estructura y pesos de redes neuronales simultáneamente, usado en control de drones.
+  \end{enumerate}
+
+  \subsection*{Ventajas y Limitaciones}
+
+  \textbf{Ventajas:}
+  \begin{itemize}
+    \item Resuelve problemas NP-duros donde métodos clásicos fallan
+    \item Escalabilidad en sistemas distribuidos
+    \item Tolerancia a fallos parciales
+    \item No requiere modelo matemático previo del problema
+  \end{itemize}
+
+  \textbf{Limitaciones:}
+  \begin{itemize}
+    \item Alto costo computacional en iteraciones
+    \item Dificultad para garantizar convergencia óptima
+    \item Sensibilidad a parámetros de configuración iniciales
+    \item Complejidad en la validación teórica
+  \end{itemize}
+
+  \textbf{Aplicación Actual}: Optimización logística, robótica colaborativa, diseño de materiales, y gestión de recursos energéticos.
+
+  \subsection*{Ejemplos Adicionales}
+
+  \begin{enumerate}
+    \item \textbf{Optimización de Parques Eólicos usando Enjambre de Partículas (PSO)}
+
+    \begin{itemize}
+      \item \textbf{Problema}: Disposición óptima de turbinas eólicas para minimizar interferencias aerodinámicas.
+      
+      \item \textbf{Aplicación del paradigma}:
+
+        \begin{itemize}
+          \item Inspiración en el comportamiento colectivo de bandadas de pájaros: cada partícula (solución candidata) ajusta su trayectoria combinando conocimiento individual y grupal.
+          
+          \item Mecanismo bioinspirado: Actualización de velocidades mediante ecuaciones que replican la coordinación descentralizada en la naturaleza.
+        \end{itemize}
+        
+      \item \textbf{Beneficios del paradigma}:
+
+        \begin{itemize}
+          \item Capacidad para explorar espacios de solución no convexos sin requerir gradientes matemáticos.
+
+          \item Adaptabilidad a cambios en las condiciones del viento mediante dinámica de enjambre autoorganizada.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Detección de Melanoma con Redes de Hongos}
+    
+      \begin{itemize}
+        \item \textbf{Problema}: Segmentación de lesiones cutáneas en imágenes con ruido e irregularidades.
+        
+        \item \textbf{Aplicación del paradigma}:
+
+          \begin{itemize}
+            \item Modelado del crecimiento adaptativo de micelios fúngicos (Physarum polycephalum): las "hifas" virtuales exploran la imagen priorizando regiones de alto contraste.
+            
+            \item Mecanismo bioinspirado: Tácticas de exploración basadas en retroalimentación química simulada (atracción/repulsión a píxeles).
+          \end{itemize}
+          
+        \item \textbf{Beneficios del paradigma}:
+          \begin{itemize}
+            \item Robustez ante artefactos en imágenes (sombras, vellos) gracias a la naturaleza probabilística de la exploración biológica.
+            \item Detección de patrones morfológicos no lineales sin requerir dataset etiquetado extensivo.
+          \end{itemize}
+      \end{itemize}
+
+    \item \textbf{Logística Urbana con Comportamiento de Bacterias}
+    
+      \begin{itemize}
+        \item \textbf{Problema}: Planificación de rutas de entrega con restricciones dinámicas (tráfico, zonas de bajas emisiones).
+        
+        \item \textbf{Aplicación del paradigma}:
+
+          \begin{itemize}
+            \item Implementación del algoritmo de Forrajeo Bacteriano (BFO): las rutas se optimizan replicando la quimiotaxis de E. coli hacia nutrientes.
+            
+            \item Mecanismo bioinspirado: Eliminación de soluciones ineficientes mediante un proceso análogo a la muerte celular bacteriana.
+          \end{itemize}
+          
+        \item \textbf{Beneficios del paradigma}:
+        
+          \begin{itemize}
+            \item Adaptación en tiempo real mediante mecanismos de atracción/repulsión equivalentes a señales químicas.
+
+            \item Manejo de múltiples objetivos contrapuestos (tiempo vs. emisiones) mediante estrategias de diversidad genética preservada.
+          \end{itemize}
+      \end{itemize}
+  \end{enumerate}
+
+  \section*{Paradigma Computacional}
+
+  Este paradigma se fundamenta en modelos matemáticos y métodos algorítmicos para procesar información, enfatizando la eficiencia computacional y la resolución numérica de problemas. Integra teoría de la computación, estadística avanzada y optimización matemática.
+
+  \subsection*{Características Principales}
+  \begin{itemize}
+    \item Basado en \textbf{modelos matemáticos formales} (ecuaciones, matrices, grafos)
+    \item Énfasis en la \textbf{eficiencia algorítmica} (complejidad temporal/espacial)
+    \item Uso intensivo de \textbf{métodos estadísticos} y análisis cuantitativo
+    \item Integración con arquitecturas de \textbf{alto rendimiento} (HPC, GPUs)
+    \item Enfoque \textbf{determinista} o probabilístico según el modelo
+  \end{itemize}
+
+  \subsection*{Ejemplos Prácticos}
+  \begin{enumerate}
+    \item \textbf{Algoritmos de Aprendizaje Automático}
+    
+      \textit{Máquinas de Soporte Vectorial (SVM)}
+    
+      Clasificador lineal/no lineal usado en diagnóstico genético (ej. identificación de marcadores cancerígenos con 92\% precisión).
+
+    \item \textbf{Computación en la Nube para IA}
+    
+      \textit{AWS SageMaker}
+    
+      Plataforma que optimiza distribuciones paralelas de entrenamiento de modelos usando MapReduce y contenedores Docker.
+
+    \item \textbf{Criptografía Cuántica}
+    
+      \textit{Algoritmo RSA mejorado}
+    
+      Implementaciones poscuánticas que resisten ataques basados en la factorización de enteros grandes (usado en blockchain).
+
+    \item \textbf{Minería de Datos a Gran Escala}
+    
+      \textit{Algoritmo Apriori para Market Basket Analysis}
+    
+      Walmart lo utiliza para descubrir asociaciones entre productos (ej. "los que compran pañales tienen 65\% de probabilidad de comprar cerveza").
+
+    \item \textbf{Simulaciones Computacionales}
+    
+      \textit{Modelado de Pandemias con SEIR}
+    
+      COVID-19 Forecast Hub combinó modelos diferenciales y Monte Carlo para predecir propagación con ±8\% error.
+  \end{enumerate}
+
+  \subsection*{Ventajas y Limitaciones}
+
+  \textbf{Ventajas:}
+  \begin{itemize}
+    \item Precisión cuantificable mediante métricas matemáticas
+    \item Escalabilidad en infraestructuras distribuidas
+    \item Capacidad para manejar problemas de optimización pura
+    \item Resultados reproducibles y verificables
+  \end{itemize}
+
+  \textbf{Limitaciones:}
+  \begin{itemize}
+    \item Dependencia crítica de la calidad de datos de entrada
+    \item Costos energéticos elevados en cálculos masivos
+    \item Rigidez ante problemas con restricciones dinámicas
+    \item Riesgo de sesgos algorítmicos en modelos estadísticos
+  \end{itemize}
+
+  \textbf{Aplicación Actual}: Finanzas cuantitativas, predicción climática, diseño de fármacos mediante docking molecular, y optimización de cadenas de suministro globales.
+
+  \subsection*{Ejemplos Adicionales}
+
+  \begin{enumerate}
+    \item \textbf{Predicción de Fallos en Infraestructuras con Modelos de Monte Carlo}
+
+      \begin{itemize}
+        \item \textbf{Problema}: Estimación probabilística de la vida útil de puentes bajo cargas dinámicas y corrosión.
+        
+        \item \textbf{Aplicación del paradigma}:
+
+          \begin{itemize}
+            \item Simulación de 10,000 escenarios mediante cadenas de Markov Monte Carlo (MCMC), integrando variables físicas (tensión, humedad) y ecuaciones diferenciales estocásticas.
+
+            \item Uso de métodos numéricos para resolver integrales multidimensionales no analíticas.
+          \end{itemize}
+
+        \item \textbf{Beneficios del paradigma}:
+        
+          \begin{itemize}
+            \item Capacidad para cuantificar riesgos con intervalos de confianza (ej. "Probabilidad del 95\% de fallo antes de 2035 ± 1.2 años").
+
+            \item Optimización de recursos mediante algoritmos de muestreo adaptativo (reducción del 70\% en tiempo de simulación vs. métodos deterministas).
+          \end{itemize}
+      \end{itemize}
+
+    \item \textbf{Personalización de Terapias Oncológicas mediante Optimización Convexa}
+
+      \begin{itemize}
+        \item \textbf{Problema}: Diseñar dosis de radiación que maximicen daño a tumores minimizando toxicidad en tejidos sanos.
+        
+        \item \textbf{Aplicación del paradigma}:
+
+          \begin{itemize}
+            \item Modelado matemático como problema de optimización restringida: función objetivo no lineal con 500+ variables (voxeles tumorales).
+            
+            \item Resolución mediante algoritmos de punto interior (IPM) con aceleración GPU para matrices dispersas.
+          \end{itemize}
+          
+        \item \textbf{Beneficios del paradigma}:
+
+          \begin{itemize}
+            \item Precisión submilimétrica garantizada por convergencia matemática (error < 0.01\% en dosis objetivo).
+            
+            \item Escalabilidad a geometrías complejas (tumores irregulares) mediante descomposición de dominio.
+          \end{itemize}
+      \end{itemize}
+
+    \item \textbf{Gestión de Tráfico Aéreo mediante Teoría de Juegos Algorítmica}
+
+      \begin{itemize}
+        \item \textbf{Problema}: Coordinar rutas de aviones comerciales para evitar colisiones y retrasos en espacio aéreo congestionado.
+
+        \item \textbf{Aplicación del paradigma}:
+
+          \begin{itemize}
+            \item Formalización como juego cooperativo de n-jugadores con restricciones temporales y espaciales.
+
+            \item Solución mediante algoritmos de equilibrio de Nash computacional, usando programación cuadrática secuencial (SQP).
+          \end{itemize}
+
+        \item \textbf{Beneficios del paradigma}:
+
+          \begin{itemize}
+            \item Garantías formales de seguridad mediante demostraciones matemáticas (ej. distancia mínima entre aviones siempre ≥ 5 km).
+
+            \item Eficiencia computacional demostrable: complejidad \(O(n \log n)\) vs \(O(n^3)\) de métodos heurísticos.
+          \end{itemize}
+      \end{itemize}
+  \end{enumerate}
+\end{document}

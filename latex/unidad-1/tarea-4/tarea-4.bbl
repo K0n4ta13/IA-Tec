@@ -1,0 +1,89 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{anonimo2019wumpus}{misc}{}{}
+      \list{institution}{1}{%
+        {Escuela Politécnica Nacional}%
+      }
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{ https://www.studocu.com/ec/document/escuela-politecnica-nacional/inteligencia-artificial/mundo-wumpus-agentes-deliberativos/5225362 }}
+      \field{title}{Agentes deliberativos}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{botia2007agentes}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=8f89595e5e10ceab4613f79fb16a98e5}{%
+           family={Botía},
+           familyi={B\bibinitperiod},
+           given={Juan\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{fullhash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{fullhashraw}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{bibnamehash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{authorbibnamehash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{authornamehash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{authorfullhash}{8f89595e5e10ceab4613f79fb16a98e5}
+      \strng{authorfullhashraw}{8f89595e5e10ceab4613f79fb16a98e5}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Departamento de Ingeniería de la Información y las Comunicaciones , Universidad de Murcia}
+      \field{month}{10}
+      \field{title}{Introducción al concepto de agente. Sistemas Multi-Agente y Sistemas Autónomos}
+      \field{year}{2007}
+      \true{nocite}
+    \endentry
+    \entry{chudleigh2024agentes}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9287ac401fd2258e013264ea10b36ea3}{%
+           family={Chudleigh},
+           familyi={C\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{fullhash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{fullhashraw}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{bibnamehash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{authorbibnamehash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{authornamehash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{authorfullhash}{9287ac401fd2258e013264ea10b36ea3}
+      \strng{authorfullhashraw}{9287ac401fd2258e013264ea10b36ea3}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{ https://botpress.com/es/blog/real-world-applications-of-ai-agents }}
+      \field{month}{7}
+      \field{title}{36 ejemplos reales de agentes de IA}
+      \field{year}{2024}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

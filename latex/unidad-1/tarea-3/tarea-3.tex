@@ -1,0 +1,166 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+
+\usepackage{csquotes}
+\DeclareQuoteStyle{spanish}{\textquotedblleft}{\textquotedblright}{\textquoteleft}{\textquoteright}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+  
+  \thispagestyle{empty}
+
+  \includegraphics[width=\textwidth]{/usr/share/templates/latex/tec.jpeg}
+
+  \begin{center}
+    {\LARGE \textbf{Instituto Tecnológico de Culiacán}}
+
+    \vspace{1cm}
+    {\Large Inteligencia Artificial}
+
+    \vspace{4cm}
+    {\large \textbf{Equipo:}}
+
+    \vspace{0.3cm}
+    {\large
+      Uriarte Lopez Brandon Gael\\\vspace{0.3cm}
+      Ramos Matunaga Raúl Alejandro
+    }
+
+    \vspace{2cm}
+    {\large \textbf{Carrera:}}
+
+    \vspace{0.3cm}
+    {\large Ingeniería en Sistemas Computacionales}
+
+    \vspace{2cm}
+    {\large \textbf{Docente:}}
+
+    \vspace{0.3cm}
+    {\large Mora Felix Zuriel Dathan}
+  \end{center}
+
+  \newpage
+
+  \begin{enumerate}
+    \item \textbf{¿Cómo construir un sistema de recomendaciones? ¿Qué tecnologías, algoritmos y frameworks se pueden utilizar?}
+
+    \vspace{0.3cm}
+    Un sistema de recomendaciones es un tipo de sistema de filtrado de información que predice y sugiere elementos que pueden ser de interés para un usuario. Estos sistemas son ampliamente utilizados en diversas industrias, como el comercio electrónico, el streaming de contenido, las redes sociales y la educación.
+
+    Un claro ejemplo es el sistema de recomendaciones de Netflix. Cuando un usuario ve una película o serie, el algoritmo de Netflix analiza su historial de visualización y lo compara con otros usuarios con gustos similares. Con base en esto, sugiere contenido que probablemente le interese, como películas de géneros similares o títulos vistos por personas con hábitos de visualización parecidos.
+
+    \vspace{0.3cm}
+    \textbf{Construcción de un sistema de recomendaciones}
+
+    Para construir un sistema de recomendaciones, es necesario seguir un proceso estructurado que involucra la recolección de datos, la elección de un algoritmo de recomendación y la implementación de la infraestructura tecnológica adecuada.
+
+    \vspace{0.3cm}
+    \textbf{Recolección de Datos}
+
+    El primer paso en la construcción de un sistema de recomendaciones es la recopilación de datos relevantes. Dependiendo del tipo de sistema, estos datos pueden incluir:
+
+    \begin{itemize}
+      \item \textbf{Datos explícitos:} Preferencias directas del usuario, como calificaciones o reseñas.
+
+      \item \textbf{Datos implícitos:} Comportamiento del usuario, como clics, historial de navegación, compras previas.
+
+      \item \textbf{Datos contextuales:} Información adicional como ubicación, hora del día o dispositivo utilizado.
+    \end{itemize}
+
+    \vspace{0.3cm}
+    \textbf{Elección del Algoritmo de Recomendación}
+
+    Existen varios enfoques para implementar un sistema de recomendaciones:
+
+    \begin{itemize}
+      \item \textbf{Filtrado Colaborativo:} Este método se basa en identificar patrones de comportamiento entre usuarios para hacer predicciones sobre sus preferencias futuras. Algoritmos como \textbf{k-Nearest Neighbors (k-NN), Singular Value Decomposition (SVD) y Factorización de Matrices} permiten analizar grandes volúmenes de interacciones y ofrecer recomendaciones precisas.
+
+      \item \textbf{Filtrado Basado en Contenido:} En este enfoque, el sistema recomienda elementos que comparten características con aquellos previamente consumidos por el usuario. Se emplean técnicas como \textbf{TF-IDF, word embeddings (Word2Vec, BERT)} y modelos de clasificación como \textbf{Naïve Bayes o SVM} para analizar y categorizar los elementos recomendados.
+
+      \item \textbf{Sistemas Híbridos:} Estos sistemas combinan filtrado colaborativo y basado en contenido para mejorar la precisión de las recomendaciones. Utilizan modelos avanzados basados en \textbf{deep learning}, como \textbf{Autoencoders y Transformers}, para analizar múltiples fuentes de datos y generar sugerencias más precisas.
+    \end{itemize}
+
+    \textbf{Implementación Tecnológica}
+
+    Para la construcción del sistema de recomendaciones, existen frameworks y herramientas especializadas que facilitan la implementación de modelos de machine learning y procesamiento de datos:
+
+    \begin{itemize}
+      \item \textbf{TensorFlow/Keras/PyTorch:} Para redes neuronales profundas.
+
+      \item \textbf{Apache Spark MLlib:} Para sistemas de recomendación en big data.
+
+      \item \textbf{Python:} Ampliamente utilizado en ciencia de datos con bibliotecas como Pandas, NumPy y Scikit-learn.
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \item \textbf{¿Qué herramientas ofrece AWS y GCP para implementar sistemas de recomendación?}
+
+    \vspace{0.3cm}
+    Tanto AWS como GCP ofrecen múltiples herramientas para implementar sistemas de recomendación con machine learning y big data. Cada plataforma proporciona opciones específicas para procesar grandes volúmenes de datos, extraer patrones de comportamiento de los usuarios, generar recomendaciones en tiempo real y almacenar información de manera eficiente.
+
+    \vspace{0.3cm}
+    \textbf{AWS}
+
+    \begin{itemize}
+      \item \textbf{Amazon Personalize:} El servicio más destacado para implementar sistemas de recomendación. Este servicio gestionado permite crear recomendaciones personalizadas en tiempo real, utilizando técnicas avanzadas de aprendizaje automático.
+
+      \item \textbf{Amazon SageMaker:} Es una plataforma completa para construir, entrenar e implementar modelos de machine learning.
+    \end{itemize}
+
+    \vspace{0.3cm}
+    \textbf{GCP}
+
+    \begin{itemize}
+      \item \textbf{Vertex AI:} Es una plataforma integral para desarrollar, entrenar y desplegar modelos de machine learning. Esta plataforma incluye servicios como AutoML, que facilita la creación de modelos sin necesidad de codificación avanzada, así como herramientas para la optimización de modelos y su despliegue.
+
+      \item \textbf{BigQuery:} La plataforma de análisis de datos de Google Cloud. Con BigQuery ML, puedes construir sistemas de recomendación utilizando SQL y aplicar algoritmos como el filtrado colaborativo.
+    \end{itemize}
+
+    \vspace{0.5cm}
+    \item \textbf{¿Qué tecnologías, algoritmos y frameworks se emplean para mejorar la eficiencia en el uso de recursos?}
+
+    \vspace{0.3cm}
+    Para mejorar la eficiencia en el uso de recursos en sistemas, se emplean diversas tecnologías, algoritmos y frameworks. Estas herramientas están diseñadas para optimizar tanto el rendimiento como la utilización de recursos, reduciendo la complejidad y asegurando que los sistemas puedan escalar sin consumir recursos excesivos.
+
+    \vspace{0.3cm}
+    \textbf{Algoritmos de Optimización}
+    
+    Son técnicas que buscan encontrar la mejor solución posible para un problema bajo ciertas restricciones, y se utilizan en una variedad de campos, desde la inteligencia artificial hasta la logística y las redes.
+
+    \begin{itemize}
+      \item \textbf{Algoritmos Genéticos (GA):} Emulan el proceso evolutivo natural para encontrar soluciones óptimas en problemas complejos, utilizando operadores como selección, cruce y mutación.
+
+      \item \textbf{Algoritmos de Optimización por Enjambre de Partículas (PSO):} Inspirados en el comportamiento de las aves o peces, buscan soluciones óptimas explorando el espacio de búsqueda a través de partículas que se mueven basándose en su experiencia y la de sus vecinas.
+    \end{itemize}
+
+    \vspace{0.3cm}
+    \textbf{Frameworks y Tecnologías para la Optimización de Recursos}
+    
+    Estas herramientas y plataformas permiten maximizar la eficiencia en el uso de recursos, desde el procesamiento de datos hasta la administración de infraestructura de TI.
+
+    \begin{itemize}
+      \item \textbf{TensorFlow, PyTorch, Keras:} Frameworks de machine learning que incluyen optimizadores como el gradiente descendente, usados en la optimización de modelos y tareas relacionadas con la inteligencia artificial.
+
+      \item \textbf{Kubernetes y Docker:} Herramientas de orquestación que gestionan contenedores, permitiendo la distribución y escalabilidad automática de aplicaciones para optimizar el uso de recursos.
+    \end{itemize}
+
+    \vspace{0.3cm}
+    \textbf{Optimización de Infraestructura en la Nube}
+
+    En la nube, la optimización de recursos se basa en ajustar dinámicamente los recursos según la demanda.
+
+    \begin{itemize}
+      \item \textbf{Auto-scaling:} Plataformas en la nube que ajustan automáticamente la capacidad computacional en función de la demanda, optimizando costos.
+
+      \item \textbf{Elastic Load Balancing:} Distribuye el tráfico de red entre diferentes servidores, mejorando el rendimiento y evitando la sobrecarga en un solo servidor.
+
+      \item \textbf{Caché Distribuida:} Almacena datos en memoria para reducir la carga en las bases de datos y mejorar los tiempos de respuesta de las aplicaciones.
+    \end{itemize}
+  \end{enumerate}
+\end{document}

@@ -1,0 +1,105 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+
+\usepackage[backend=biber]{biblatex} 
+\addbibresource{bibliography.bib}
+
+\usepackage{csquotes}
+\DeclareQuoteStyle{spanish}{\textquotedblleft}{\textquotedblright}{\textquoteleft}{\textquoteright}
+\MakeOuterQuote{"}
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+  
+  \thispagestyle{empty}
+
+  \includegraphics[width=\textwidth]{/usr/share/templates/latex/tec.jpeg}
+
+  \begin{center}
+    {\LARGE \textbf{Instituto Tecnológico de Culiacán}}
+
+    \vspace{1cm}
+    {\Large Inteligencia Artificial}
+
+    \vspace{4cm}
+    {\large \textbf{Equipo:}}
+
+    \vspace{0.3cm}
+    {\large
+      Ramos Matunaga Raúl Alejandro\\\vspace{0.3cm}
+      Uriarte Lopez Brandon Gael
+    }
+
+    \vspace{2cm}
+    {\large \textbf{Carrera:}}
+
+    \vspace{0.3cm}
+    {\large Ingeniería en Sistemas Computacionales}
+
+    \vspace{2cm}
+    {\large \textbf{Docente:}}
+
+    \vspace{0.3cm}
+    {\large Mora Felix Zuriel Dathan}
+  \end{center}
+
+  \newpage
+
+  {\large \textbf{Agentes Deliberativos}}
+
+  \vspace{0.5cm}
+  Los \textbf{agentes deliberativos} son sistemas inteligentes autónomos que disponen de un modelo interno del mundo, lo que les permite razonar de forma simbólica y planificar sus acciones. A diferencia de los agentes reactivos, que responden de manera inmediata a estímulos sin un procesamiento interno profundo, los agentes deliberativos utilizan técnicas de razonamiento lógico y planificación para elegir la mejor secuencia de acciones a seguir. Entre sus características fundamentales destacan:
+
+  \begin{itemize}
+    \item \textbf{Representación Interna del Conocimiento:} Utilizan modelos simbólicos para representar las creencias (conocimiento sobre el entorno), los deseos (objetivos o metas a alcanzar) y las intenciones (planes seleccionados para cumplir dichos objetivos). Esta arquitectura se conoce como BDI (Beliefs, Desires, Intentions).
+    \item \textbf{Ciclo de Percepción-Deliberación-Acción:} El agente primero percibe su entorno, actualiza su base de conocimiento y, a partir de ahí, delibera sobre qué objetivo perseguir y qué plan de acción ejecutar.
+    \item \textbf{Planificación Estratégica y Razonamiento:} Gracias a su capacidad de razonamiento simbólico, estos agentes pueden evaluar múltiples opciones y predecir consecuencias a mediano y largo plazo.
+    \item \textbf{Flexibilidad y Adaptación:} Pueden reestructurar sus planes en función de la evolución del entorno, lo que les permite alcanzar objetivos de forma más “inteligente” y adaptativa.
+  \end{itemize}
+
+  \vspace{1cm}
+  {\large \textbf{Ejemplos de Empresas Reales que Utilizan Agentes Deliberativos}}
+
+  \vspace{0.7cm}
+  \textbf{IBM Watson}
+
+  \vspace{0.3cm}
+  IBM ha desarrollado sistemas de inteligencia artificial que incorporan componentes deliberativos para el análisis y toma de decisiones. Watson, por ejemplo, analiza grandes volúmenes de datos, actualiza sus conocimientos y genera planes de acción en aplicaciones como el diagnóstico médico y la atención al cliente.
+
+  \vspace{1.1cm}
+  \textbf{Amazon}
+
+  \vspace{0.3cm}
+  En logística y gestión de inventarios, Amazon utiliza agentes deliberativos para optimizar la cadena de suministro. Estos sistemas analizan datos en tiempo real (niveles de inventario, demanda del mercado, condiciones de tráfico) y planifican rutas de entrega y reposiciones de stock.
+
+  \vspace{0.7cm}
+  \textbf{Empresas de Telecomunicaciones (Claro, Tigo, Telintel)}
+
+  \vspace{0.3cm}
+  Varias compañías en América Latina han adoptado agentes deliberativos para mejorar la atención al cliente y la gestión de redes, optimizando el servicio y resolviendo incidencias en tiempo real.
+
+  \vspace{0.7cm}
+  \textbf{SAP y Oracle}
+
+  \vspace{0.3cm}
+  Las plataformas de gestión empresarial de SAP y Oracle incorporan agentes deliberativos que asisten en la planificación, asignación de tareas y optimización de recursos, mejorando la eficiencia organizativa.
+
+  \vspace{0.7cm}
+  \textbf{Waymo y Tesla}
+
+  \vspace{0.3cm}
+  En el sector automotriz, los vehículos autónomos de Waymo y Tesla integran componentes deliberativos para planificar rutas y tomar decisiones en situaciones imprevistas, combinando datos sensoriales con algoritmos de planificación.
+
+  \newpage
+
+  \thispagestyle{empty}
+
+  \nocite{*}
+  \printbibliography
+  
+\end{document}
